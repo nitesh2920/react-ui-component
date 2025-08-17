@@ -1,69 +1,81 @@
-# React + TypeScript + Vite
+# React-ui-comonent
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="left">
 
-Currently, two official plugins are available:
+<br clear="left"/>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Project Structure
 
-## Expanding the ESLint configuration
+```sh
+└── react-ui-component/
+    │   ├── components
+    │   │   ├── DataTable
+    │   │   │   ├── DataTable.stories.tsx 
+    │   │   │   ├── DataTable.test.tsx
+    │   │   │   └── DataTable.tsx
+    │   │   └── InputField
+    │   │       ├── InputField.stories.tsx
+    │   │       ├── InputField.test.tsx
+    │   │       ├── InputField.tsx
+    │   │       └── InputField.types.ts
+    │   ├── index.css
+    │   ├── main.tsx
+    │   ├── setupTest.ts
+    │   └── vite-env.d.ts
+    ├── tsconfig.app.json
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    ├── vite.config.ts
+    └── vitest.shims.d.ts
+```
+###  Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the react-ui-component repository:
+```sh
+❯ git clone https://github.com/nitesh2920/react-ui-component
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Navigate to the project directory:
+```sh
+❯ cd react-ui-component
 ```
+
+3. Install the project dependencies:
+
+
+**Using `npm`** &nbsp; 
+
+```sh
+❯ npm install
+```
+
+
+
+
+###  run local dev.
+Run react-ui-component using the following command:
+**Using `npm`** &nbsp;
+
+```sh
+❯ npm run dev
+```
+
+
+###  Testing
+Run the test suite using the following command:
+**Using `npm`** &nbsp; 
+
+```sh
+❯ npm test
+```
+
+###  run storybook 
+Run the test suite using the following command:
+**Using `npm`** &nbsp;
+
+```sh
+❯ npm run storybook
+```
+
+
+---
