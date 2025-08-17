@@ -1,6 +1,12 @@
 # React-ui-comonent
 
+## 🧠 Approach
+
+I focused on building clean, reusable React components with TypeScript to ensure type safety and better developer experience. TailwindCSS was used for easy, consistent styling with support for dark mode. Accessibility was a priority, so I added proper labels, ARIA attributes, and keyboard-friendly interactions.
+
+The components are flexible, supporting different variants and states to cover common use cases. 
 <div align="left">
+
 
 <br clear="left"/>
 
@@ -10,13 +16,13 @@
 └── react-ui-component/
     │   ├── components
     │   │   ├── DataTable
-    │   │   │   ├── DataTable.stories.tsx 
-    │   │   │   ├── DataTable.test.tsx
-    │   │   │   └── DataTable.tsx
+    │   │   │   ├── DataTable.stories.tsx     # Storybook file to showcase DataTable
+    │   │   │   ├── DataTable.test.tsx        # test file using jest
+    │   │   │   └── DataTable.tsx             # DataTable component code
     │   │   └── InputField
-    │   │       ├── InputField.stories.tsx
-    │   │       ├── InputField.test.tsx
-    │   │       ├── InputField.tsx
+    │   │       ├── InputField.stories.tsx    # storybook for inputField
+    │   │       ├── InputField.test.tsx       # test file using jest
+    │   │       ├── InputField.tsx            # inputField componene code
     │   │       └── InputField.types.ts
     │   ├── index.css
     │   ├── main.tsx
